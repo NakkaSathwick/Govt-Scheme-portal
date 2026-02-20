@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top bar saffron */
+.top-bar {
+    background-color: #FF9933;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Header Navy */
+header {
+    background-color: #000080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Leaders */
+#leaders {
+    padding: 40px;
+    text-align: center;
+}
+
+.leader-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Schemes */
+#schemes {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.scheme-card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    width: 60%;
+    border-left: 6px solid #138808;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #138808;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e6606;
+}
+
+/* Footer */
+footer {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 8% auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.modal-content input {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* 3D Card Effect */
+.scheme-card {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    border-left: 6px solid #138808;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+    border-radius: 10px;
+}
+
+.scheme-card:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0b5ed7;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Notification Ticker -->
+<marquee scrollamount="10">
+            🔔 Present Central Schemes: 
+            Pradhan Mantri Awas Yojana | 
+            Ayushman Bharat | 
+            PM Kisan | 
+            Skill India Mission  ||  
+
+            🔔 State Schemes: 
+            Rythu Bandhu | 
+            KCR Kit | 
+            Amma Vodi | 
+            Kalaignar Insurance Scheme</marquee>
+        </p>
+    </div>
+</div>
+    <meta charset="UTF-8">
+    <title>Simplified Access to Government Welfare Schemes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Government Bar -->
+    <div class="top-bar">
+        <h3>Government of India</h3>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Simplified Access to Government Welfare Schemes</h1>
+        <nav>
+    <a href="#home">Home</a>
+    <a href="#leaders">Leaders</a>
+    <a href="#schemes">Schemes</a>
+    <a href="#contact">Contact</a>
+
+    <!-- Options Dropdown -->
+    <div class="dropdown">
+        <button class="dropbtn" onclick="toggleDropdown()">Options ▾</button>
+        <div class="dropdown-content" id="optionsMenu">
+            <a href="#">Citizen Login</a>
+            <a href="#">Check Eligibility</a>
+            <a href="#">Track Application</a>
+            <a href="#">Download Forms</a>
+            <a href="#">Grievance Portal</a>
+            <a href="#">Help & Support</a>
+            <a href="#">Upload Documents</a>
+        </div>
+    </div>
+</nav>
+    </header>
+
+    <!-- Leaders Section -->
+    <section id="leaders">
+        <h2>National Leaders</h2>
+        <div class="leader-container">
+
+            <div class="card">
+                <img src="images/pm.jpg" alt="Prime Minister">
+                <h3>Prime Minister of India</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/minister1.jpg" alt="Minister">
+                <h3>Central Minister</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/minister2.jpg" alt="MP">
+                <h3>Member of Parliament</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Schemes Section -->
+    <section id="schemes">
+    <h2>Central Government Schemes</h2>
+
+    <div class="carousel-container">
+        <button class="nav-btn" onclick="scrollLeft()">◀</button>
+
+        <div class="carousel" id="schemeCarousel">
+
+            <div class="scheme-card">
+                <h3>Pradhan Mantri Awas Yojana</h3>
+                <p>Housing scheme for weaker sections.</p>
+               <button onclick="window.open('https://pmay-urban.gov.in/', '_blank')">Apply</button>
+  
+</button>
+            </div>
+
+            <div class="scheme-card">
+                <h3>Ayushman Bharat</h3>
+                <p>Health insurance scheme.</p>
+                <button onclick="window.open('https://abdm.gov.in/', '_blank')">Apply</button>
+  
+            </div>
+
+            <div class="scheme-card">
+                <h3>PM Kisan</h3>
+                <p>Income support for farmers.</p>
+                <button onclick="applyScheme('PM Kisan')">Apply Now</button>
+            </div>
+
+            <div class="scheme-card">
+                <h3>Skill India</h3>
+                <p>Skill development mission.</p>
+                <button onclick="applyScheme('Skill India')">Apply Now</button>
+            </div>
+
+        </div>
+
+        <button class="nav-btn" onclick="scrollRight()">▶</button>
+    </div>
+</section>
+
+
+    <footer>
+        <p>© 2026 Government of India | All Rights Reserved</p>
+    </footer>
+
+    <!-- Application Modal (PUT IT HERE - INSIDE BODY) -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Apply for <span id="schemeName"></span></h2>
+
+            <h3>Login Details</h3>
+            <input type="text" placeholder="Aadhaar Number" required>
+            <input type="password" placeholder="Password" required>
+
+            <h3>Citizen Details</h3>
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="Age" required>
+            <input type="text" placeholder="Occupation" required>
+            <input type="number" placeholder="Annual Income" required>
+
+            <button onclick="submitApplication()">Submit Application</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
